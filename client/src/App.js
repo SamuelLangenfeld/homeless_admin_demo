@@ -19,6 +19,10 @@ class App extends Component {
     this.setState({ user: "dataKind@dc.org" });
   };
 
+  logout = () => {
+    this.setState({ user: null });
+  };
+
   render() {
     const redirect = this.state.user ? null : <Redirect to="/login" />;
     return (
@@ -34,7 +38,9 @@ class App extends Component {
               <NavLink to="/login">Login</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-              <NavLink to="/logout">Logout</NavLink>
+              <a href="#" onClick={this.logout}>
+                Logout
+              </a>
             </Navbar.Brand>
           </Nav>
         </Navbar>
