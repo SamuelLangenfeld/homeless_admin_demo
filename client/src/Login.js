@@ -18,14 +18,13 @@ const Login = props => {
       e.target.email.value === admin.email &&
       e.target.password.value === admin.password
     ) {
-      console.log(props);
       props.userLogin();
       props.history.push(`/admin/${admin.id}`);
     }
   };
 
   return (
-    <Col sm={4} smOffset={4}>
+    <Col sm={6} smOffset={3}>
       <Jumbotron>
         <p style={{ textAlign: "center" }}>
           DC Homeless Service Provider Admin Page

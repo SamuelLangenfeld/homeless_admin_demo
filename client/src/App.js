@@ -9,14 +9,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      user: "some"
+      user: null
     };
 
     this.login = this.login.bind(this);
   }
 
   login = () => {
-    alert("should be logged in");
     this.setState({ user: "dataKind@dc.org" });
   };
 
@@ -41,6 +40,7 @@ class App extends Component {
         </Navbar>
         {redirect}
         <Switch>
+          <Route exact path="/" component={Login} />
           <Route
             exact
             path="/login"

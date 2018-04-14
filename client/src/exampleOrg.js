@@ -30,9 +30,7 @@ var org = {
         HOUSING_NAVIGATION: "Yes",
         LEGAL_SERVICES: "Yes",
         MEDICAL_SERVICES: "Yes",
-
         MENTAL_HEALTH: "Yes",
-
         SNAP_FOOD_STAMPS: "Yes",
         SUBSTANCE_ABUSE_TREATMENT: "Yes",
         TANF_FINANCIAL_ASSISTANCE: "Yes"
